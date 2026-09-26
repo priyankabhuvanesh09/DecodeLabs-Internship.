@@ -1,26 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studet Course Portal</title>
+
+    <title>Student Course Portal</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
+
 <header>
+
     <nav>
+
         <div class="name">Student Course Portal</div>
+
         <ul>
             <a href="#dashboard">Home</a>
-<a href="#courses">Courses</a>
-<a href="#my-courses">My Courses</a>
-<a href="#assignments">Assignments</a>
-<a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#my-courses">My Courses</a>
+            <a href="#assignments">Assignments</a>
+            <a href="#profile">Profile</a>
         </ul>
+
         <button type="button" onclick="logout()">Logout</button>
+
     </nav>
+
 </header>
-    <section id="dashboard">
+
+
+<!-- Dashboard -->
+
+<section id="dashboard">
 
     <div class="hero-text">
 
@@ -33,52 +49,93 @@
             complete assignments and continue your learning journey.
         </p>
 
-        <button>Enroll Now</button>
+        <button type="button">Enroll Now</button>
 
     </div>
 
 </section>
- <section id="courses"></section>
- <h2>Available Courses</h2>
- <div class="container">
-<div class="couurse container">
-    <h3>WEB DEVELOPMENT</h3>
-    <p>learn HTML.CSS,JAVASCRIPT</p>
-    <p>Duration:9 weeks</p>
-    <button type="button" onclick="enrollCourse('Web Development')">
-    Enroll Now
-</button>
-</div>
-<div class="couurse container">
-    <h3>Data ANALYSTT</h3>
-    <p>learn Excel spreadsheets,SQL,Python</p>
-    <p>Duration:7 weeks</p>
-    <button type="button" onclick="enrollCourse('data annalystt')">
-    Enroll Now
-</button>
-</div>
-<div class="couurse container">
-    <h3>APP DEVELOPMENT</h3>
-    <p>learn HTML.CSS,JAVASCRIPT</p>
-    <p>Duration:11 weeks</p>
-    <button type="button" onclick="enrollCourse('App Development')">
-    Enroll Now
-</button>
-</div>
-    <div class="couurse container">
-    <h3>PYTHON</h3>
-    <p>learn Python from basics</p>
-    <p>Duration:8 weeks</p>
-    <button type="button" onclick="enrollCourse('Python')">
-    Enroll Now
-</button>
-</div>
-</div>
+
+
+<!-- Courses -->
+
+<section id="courses">
+
+    <h2>Available Courses</h2>
+
+    <div class="container">
+
+        <div class="couurse container">
+
+            <h3>WEB DEVELOPMENT</h3>
+
+            <p>Learn HTML, CSS, JavaScript</p>
+
+            <p>Duration: 9 weeks</p>
+
+            <button type="button" onclick="enrollCourse('Web Development')">
+                Enroll Now
+            </button>
+
+        </div>
+
+
+        <div class="couurse container">
+
+            <h3>DATA ANALYST</h3>
+
+            <p>Learn Excel spreadsheets, SQL, Python</p>
+
+            <p>Duration: 7 weeks</p>
+
+            <button type="button" onclick="enrollCourse('Data Analyst')">
+                Enroll Now
+            </button>
+
+        </div>
+
+
+        <div class="couurse container">
+
+            <h3>APP DEVELOPMENT</h3>
+
+            <p>Learn HTML, CSS, JavaScript</p>
+
+            <p>Duration: 11 weeks</p>
+
+            <button type="button" onclick="enrollCourse('App Development')">
+                Enroll Now
+            </button>
+
+        </div>
+
+
+        <div class="couurse container">
+
+            <h3>PYTHON</h3>
+
+            <p>Learn Python from basics</p>
+
+            <p>Duration: 8 weeks</p>
+
+            <button type="button" onclick="enrollCourse('Python')">
+                Enroll Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- My Courses -->
+
 <section id="my-courses">
 
     <h2>My Courses</h2>
 
     <p>Courses you are currently learning.</p>
+
     <div id="enrolledCourses"></div>
 
     <div class="my-course-container">
@@ -91,9 +148,10 @@
 
             <progress value="65" max="100"></progress>
 
-            <button type="button" onclick="continueCourse('Web Development')">
-    Continue Learning
-</button>
+            <button type="button"
+                onclick="continueCourse('Web Development')">
+                Continue Learning
+            </button>
 
         </div>
 
@@ -106,9 +164,10 @@
 
             <progress value="40" max="100"></progress>
 
-            <button type="button" onclick="continueCourse('Python Programming')">
-    Continue Learning
-</button>
+            <button type="button"
+                onclick="continueCourse('Python Programming')">
+                Continue Learning
+            </button>
 
         </div>
 
@@ -121,14 +180,20 @@
 
             <progress value="80" max="100"></progress>
 
-            <button type="button" onclick="continueCourse('Database Management')">
-    Continue Learning
-</button>
+            <button type="button"
+                onclick="continueCourse('Database Management')">
+                Continue Learning
+            </button>
+
         </div>
 
     </div>
 
 </section>
+
+
+<!-- Assignments -->
+
 <section id="assignments">
 
     <h2>Assignments</h2>
@@ -147,7 +212,9 @@
 
             <p>Status: Pending</p>
 
-            <button type="button">View Assignment</button>
+            <button type="button">
+                View Assignment
+            </button>
 
         </div>
 
@@ -162,7 +229,9 @@
 
             <p>Status: Pending</p>
 
-            <button type="button">View Assignment</button>
+            <button type="button">
+                View Assignment
+            </button>
 
         </div>
 
@@ -177,13 +246,19 @@
 
             <p>Status: Completed</p>
 
-            <button type="button">View Assignment</button>
+            <button type="button">
+                View Assignment
+            </button>
 
         </div>
 
     </div>
 
 </section>
+
+
+<!-- Profile -->
+
 <section id="profile">
 
     <h2>Student Profile</h2>
@@ -194,20 +269,34 @@
 
         <h3>Student Information</h3>
 
-        <p><strong>Name:</strong> Priyanka</p>
+        <p>
+            <strong>Name:</strong> Priyanka
+        </p>
 
-        <p><strong>Department:</strong> Computer Science and Engineering</p>
+        <p>
+            <strong>Department:</strong>
+            Computer Science and Engineering
+        </p>
 
-        <p><strong>Semester:</strong> 4th Semester</p>
+        <p>
+            <strong>Semester:</strong> 4th Semester
+        </p>
 
-        <p><strong>Email:</strong> student@example.com</p>
+        <p>
+            <strong>Email:</strong> student@example.com
+        </p>
 
-       <button type="button" onclick="editProfile()">
-    Edit Profile
-</button>
+        <button type="button" onclick="editProfile()">
+            Edit Profile
+        </button>
+
     </div>
 
 </section>
+
+
+<!-- Footer -->
+
 <footer>
 
     <h3>🎓 Student Course Portal</h3>
@@ -221,6 +310,11 @@
     </p>
 
 </footer>
+
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
+```
