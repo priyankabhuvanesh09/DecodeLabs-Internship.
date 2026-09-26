@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Course Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Course Portal</h1>
+        <p>Database Integrated Student Management</p>
+    </header>
+
+    <main>
+
+        <section class="student-form">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="course"
+                    placeholder="Course"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Age"
+                    min="16"
+                    required
+                >
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="student-list">
+
+            <h2>Students</h2>
+
+            <div id="studentsContainer"></div>
+            <div id="editStudentForm" style="display: none;">
+
+    <h2>Edit Student</h2>
+
+    <input type="text" id="editName" placeholder="Student Name">
+
+    <input type="text" id="editCourse" placeholder="Course">
+
+    <button type="button" onclick="saveStudentUpdate()">
+        Save Changes
+    </button>
+
+    <button type="button" onclick="cancelEdit()">
+        Cancel
+    </button>
+
+</div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
