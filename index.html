@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studet Course Portal</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<header>
+    <nav>
+        <div class="name">Student Course Portal</div>
+        <ul>
+            <a href="#dashboard">Home</a>
+<a href="#courses">Courses</a>
+<a href="#my-courses">My Courses</a>
+<a href="#assignments">Assignments</a>
+<a href="#profile">Profile</a>
+        </ul>
+        <button type="button" onclick="logout()">Logout</button>
+    </nav>
+</header>
+    <section id="dashboard">
+
+    <div class="hero-text">
+
+        <p>WELCOME BACK 👋</p>
+
+        <h1>Learn. Grow. Succeed.</h1>
+
+        <p>
+            Access your courses, track your progress,
+            complete assignments and continue your learning journey.
+        </p>
+
+        <button>Enroll Now</button>
+
+    </div>
+
+</section>
+ <section id="courses"></section>
+ <h2>Available Courses</h2>
+ <div class="container">
+<div class="couurse container">
+    <h3>WEB DEVELOPMENT</h3>
+    <p>learn HTML.CSS,JAVASCRIPT</p>
+    <p>Duration:9 weeks</p>
+    <button type="button" onclick="enrollCourse('Web Development')">
+    Enroll Now
+</button>
+</div>
+<div class="couurse container">
+    <h3>Data ANALYSTT</h3>
+    <p>learn Excel spreadsheets,SQL,Python</p>
+    <p>Duration:7 weeks</p>
+    <button type="button" onclick="enrollCourse('data annalystt')">
+    Enroll Now
+</button>
+</div>
+<div class="couurse container">
+    <h3>APP DEVELOPMENT</h3>
+    <p>learn HTML.CSS,JAVASCRIPT</p>
+    <p>Duration:11 weeks</p>
+    <button type="button" onclick="enrollCourse('App Development')">
+    Enroll Now
+</button>
+</div>
+    <div class="couurse container">
+    <h3>PYTHON</h3>
+    <p>learn Python from basics</p>
+    <p>Duration:8 weeks</p>
+    <button type="button" onclick="enrollCourse('Python')">
+    Enroll Now
+</button>
+</div>
+</div>
+<section id="my-courses">
+
+    <h2>My Courses</h2>
+
+    <p>Courses you are currently learning.</p>
+    <div id="enrolledCourses"></div>
+
+    <div class="my-course-container">
+
+        <div class="my-course-card">
+
+            <h3>Web Development</h3>
+
+            <p>Progress: 65%</p>
+
+            <progress value="65" max="100"></progress>
+
+            <button type="button" onclick="continueCourse('Web Development')">
+    Continue Learning
+</button>
+
+        </div>
+
+
+        <div class="my-course-card">
+
+            <h3>Python Programming</h3>
+
+            <p>Progress: 40%</p>
+
+            <progress value="40" max="100"></progress>
+
+            <button type="button" onclick="continueCourse('Python Programming')">
+    Continue Learning
+</button>
+
+        </div>
+
+
+        <div class="my-course-card">
+
+            <h3>Database Management</h3>
+
+            <p>Progress: 80%</p>
+
+            <progress value="80" max="100"></progress>
+
+            <button type="button" onclick="continueCourse('Database Management')">
+    Continue Learning
+</button>
+        </div>
+
+    </div>
+
+</section>
+<section id="assignments">
+
+    <h2>Assignments</h2>
+
+    <p>View your upcoming and completed assignments.</p>
+
+    <div class="assignment-container">
+
+        <div class="assignment-card">
+
+            <h3>Web Development Project</h3>
+
+            <p>Course: Web Development</p>
+
+            <p>Due Date: September 20, 2026</p>
+
+            <p>Status: Pending</p>
+
+            <button type="button">View Assignment</button>
+
+        </div>
+
+
+        <div class="assignment-card">
+
+            <h3>Python Programming Task</h3>
+
+            <p>Course: Python Programming</p>
+
+            <p>Due Date: September 24, 2026</p>
+
+            <p>Status: Pending</p>
+
+            <button type="button">View Assignment</button>
+
+        </div>
+
+
+        <div class="assignment-card">
+
+            <h3>Database Assignment</h3>
+
+            <p>Course: Database Management</p>
+
+            <p>Due Date: September 28, 2026</p>
+
+            <p>Status: Completed</p>
+
+            <button type="button">View Assignment</button>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="profile">
+
+    <h2>Student Profile</h2>
+
+    <p>View and manage your student information.</p>
+
+    <div class="profile-card">
+
+        <h3>Student Information</h3>
+
+        <p><strong>Name:</strong> Priyanka</p>
+
+        <p><strong>Department:</strong> Computer Science and Engineering</p>
+
+        <p><strong>Semester:</strong> 4th Semester</p>
+
+        <p><strong>Email:</strong> student@example.com</p>
+
+       <button type="button" onclick="editProfile()">
+    Edit Profile
+</button>
+    </div>
+
+</section>
+<footer>
+
+    <h3>🎓 Student Course Portal</h3>
+
+    <p>
+        Learn. Grow. Succeed.
+    </p>
+
+    <p>
+        © 2026 Student Course Portal. All Rights Reserved.
+    </p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

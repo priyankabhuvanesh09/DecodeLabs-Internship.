@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 18px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #eb2525b4;
+}
+/* Dashboard */
+
+#dashboard {
+    min-height: 500px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eef4ff;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text p:first-child {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    margin: 15px 0;
+}
+
+.hero-text h1 {
+    color: #222;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-text button {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #1d4ed8;
+}
+/* Courses */
+/* Courses */
+
+#courses {
+    padding: 70px 10%;
+    background-color: #ffffff;
+}
+
+#courses h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#courses > p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background-color: #f8faff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.course-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.course-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #1d4ed8;
+}
+#my-courses {
+    padding: 70px 10%;
+    background-color: #f5f7fb;
+}
+
+#my-courses h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#my-courses > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.my-course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.my-course-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.my-course-card h3 {
+    margin-bottom: 15px;
+}
+
+.my-course-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.my-course-card progress {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 20px;
+}
+
+.my-course-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.my-course-card button:hover {
+    background-color: #1d4ed8;
+}
+/* Assignments */
+
+#assignments {
+    padding: 70px 10%;
+    background-color: #ffffff;
+}
+
+#assignments h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#assignments > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.assignment-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.assignment-card {
+    background-color: #f8faff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.assignment-card h3 {
+    margin-bottom: 15px;
+}
+
+.assignment-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.assignment-card button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.assignment-card button:hover {
+    background-color: #1d4ed8;
+}
+/* Profile */
+
+#profile {
+    padding: 70px 10%;
+    background-color: #f5f7fb;
+}
+
+#profile h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#profile > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.profile-card p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.profile-card button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.profile-card button:hover {
+    background-color: #1d4ed8;
+}
+/* Footer */
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-bottom: 9px;
+}
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #dashboard {
+        padding: 60px 5%;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .my-course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .assignment-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #dashboard {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .course-container,
+    .my-course-container,
+    .assignment-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Login Page */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef4ff;
+}
+
+.login-box {
+    width: 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-box form {
+    text-align: left;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #1d4ed8;
+}
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
